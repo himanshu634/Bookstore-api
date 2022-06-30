@@ -1,0 +1,15 @@
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\bin\Debug\net5.0\BookStore.Repository.deps.json
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\bin\Debug\net5.0\BookStore.Repository.dll
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\bin\Debug\net5.0\BookStore.Repository.pdb
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\bin\Debug\net5.0\BookStore.models.dll
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\bin\Debug\net5.0\BookStore.models.pdb
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.csproj.AssemblyReference.cache
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.AssemblyInfoInputs.cache
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.AssemblyInfo.cs
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.csproj.CoreCompileInputs.cache
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.csproj.CopyComplete
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.dll
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\refint\BookStore.Repository.dll
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\BookStore.Repository.pdb
+C:\Users\himan\source\repos\bookstore\BookStore.Repository\obj\Debug\net5.0\ref\BookStore.Repository.dll

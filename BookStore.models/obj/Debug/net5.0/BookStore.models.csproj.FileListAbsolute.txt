@@ -1,0 +1,15 @@
+C:\Users\himan\source\repos\bookstore\BookStore.models\bin\Debug\net5.0\BookStore.models.deps.json
+C:\Users\himan\source\repos\bookstore\BookStore.models\bin\Debug\net5.0\BookStore.models.dll
+C:\Users\himan\source\repos\bookstore\BookStore.models\bin\Debug\net5.0\BookStore.models.pdb
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.csproj.AssemblyReference.cache
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.AssemblyInfoInputs.cache
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.AssemblyInfo.cs
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.csproj.CoreCompileInputs.cache
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.dll
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\refint\BookStore.models.dll
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.pdb
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\ref\BookStore.models.dll
+C:\Users\himan\source\repos\bookstore\BookStore.models\bin\Debug\net5.0\BookStore.models.runtimeconfig.json
+C:\Users\himan\source\repos\bookstore\BookStore.models\bin\Debug\net5.0\BookStore.models.runtimeconfig.dev.json
+C:\Users\himan\source\repos\bookstore\BookStore.models\obj\Debug\net5.0\BookStore.models.genruntimeconfig.cache
