@@ -6,12 +6,13 @@ using BookStore.models.ViewModels;
 namespace BookStore.Api.Controllers
 {
     [ApiController]
+    [Route("api/user")]
     public class UserController : Controller
     {
         UserRepository _repository = new UserRepository();
 
         [HttpGet]
-        [Route("GetUsers")]
+        [Route("getusers")]
         public IActionResult GetUsers()
         {
             return Ok(_repository.GetUsers());
@@ -40,5 +41,13 @@ namespace BookStore.Api.Controllers
             return Ok(user);
         }
 
+        [HttpGet]
+        [Route("getallroles")]
+        public IActionResult GetAllRoles()
+        {
+            return Ok(_repository.GetAllRoles());
+        }
     }
+
 }
+

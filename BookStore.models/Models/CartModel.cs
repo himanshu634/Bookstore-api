@@ -14,8 +14,8 @@ namespace BookStore.models.Models
         public CartModel(Cart cart)
         {
             Id=cart.Id;
-            UserId=cart.Userid;
-            BookId=cart.Bookid;
+            UserId=cart.UserId;
+            BookId=cart.BookId;
             Quantity=cart.Quantity;
         }
 

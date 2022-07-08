@@ -904,11 +904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\himan\\source\\repos\\bookstore\\bookstore\\BookStore.Api.csproj",
+      "projectUniqueName": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\bookstore\\BookStore.Api.csproj",
       "projectName": "BookStore.Api",
-      "projectPath": "C:\\Users\\himan\\source\\repos\\bookstore\\bookstore\\BookStore.Api.csproj",
+      "projectPath": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\bookstore\\BookStore.Api.csproj",
       "packagesPath": "C:\\Users\\himan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\himan\\source\\repos\\bookstore\\bookstore\\obj\\",
+      "outputPath": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\bookstore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\himan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -925,11 +925,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\himan\\source\\repos\\bookstore\\BookStore.models\\BookStore.models.csproj": {
-              "projectPath": "C:\\Users\\himan\\source\\repos\\bookstore\\BookStore.models\\BookStore.models.csproj"
+            "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\BookStore.models\\BookStore.models.csproj": {
+              "projectPath": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\BookStore.models\\BookStore.models.csproj"
             },
-            "C:\\Users\\himan\\source\\repos\\bookstore\\BookStore.Repository\\BookStore.Repository.csproj": {
-              "projectPath": "C:\\Users\\himan\\source\\repos\\bookstore\\BookStore.Repository\\BookStore.Repository.csproj"
+            "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\BookStore.Repository\\BookStore.Repository.csproj": {
+              "projectPath": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\BookStore.Repository\\BookStore.Repository.csproj"
             }
           }
         }

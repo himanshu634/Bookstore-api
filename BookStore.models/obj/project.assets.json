@@ -821,11 +821,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\himan\\source\\repos\\bookstore\\BookStore.models\\BookStore.models.csproj",
+      "projectUniqueName": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\BookStore.models\\BookStore.models.csproj",
       "projectName": "BookStore.models",
-      "projectPath": "C:\\Users\\himan\\source\\repos\\bookstore\\BookStore.models\\BookStore.models.csproj",
+      "projectPath": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\BookStore.models\\BookStore.models.csproj",
       "packagesPath": "C:\\Users\\himan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\himan\\source\\repos\\bookstore\\BookStore.models\\obj\\",
+      "outputPath": "C:\\Users\\himan\\Desktop\\tatvasoft\\code\\backend\\bookstore\\BookStore.models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\himan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Api.Controllers
 {
-    [Route("api/public")]
+    [Route("api/bookstore")]
     [ApiController]
     public class BookStoreController : ControllerBase
     {
@@ -31,5 +31,8 @@ namespace BookStore.Api.Controllers
             UserModel userModel = new UserModel(user);
             return Ok(userModel);
         }
+
+
+
     }
 }

@@ -86,21 +86,21 @@ namespace BookStore.models.ViewModels
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Bookid).HasColumnName("bookid");
+                entity.Property(e => e.BookId).HasColumnName("bookid");
 
                 entity.Property(e => e.Quantity).HasColumnName("quantity");
 
-                entity.Property(e => e.Userid).HasColumnName("userid");
+                entity.Property(e => e.UserId).HasColumnName("userid");
 
                 entity.HasOne(d => d.Book)
                     .WithMany(p => p.Carts)
-                    .HasForeignKey(d => d.Bookid)
+                    .HasForeignKey(d => d.BookId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_book");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Carts)
-                    .HasForeignKey(d => d.Userid)
+                    .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_user");
             });
@@ -216,12 +216,12 @@ namespace BookStore.models.ViewModels
                     .HasMaxLength(100)
                     .HasColumnName("email");
 
-                entity.Property(e => e.Firstname)
+                entity.Property(e => e.FirstName)
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("firstname");
 
-                entity.Property(e => e.Lastname)
+                entity.Property(e => e.LastName)
                     .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("lastname");
@@ -231,11 +231,11 @@ namespace BookStore.models.ViewModels
                     .HasMaxLength(100)
                     .HasColumnName("password");
 
-                entity.Property(e => e.Roleid).HasColumnName("roleid");
+                entity.Property(e => e.RoleId).HasColumnName("roleid");
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.Users)
-                    .HasForeignKey(d => d.Roleid)
+                    .HasForeignKey(d => d.RoleId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_role");
             });

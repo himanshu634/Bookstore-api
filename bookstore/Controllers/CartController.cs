@@ -10,18 +10,18 @@ namespace BookStore.Api.Controllers
 {
 
     [ApiController]
-    [Route("cart")]
+    [Route("api/cart")]
     public class CartController : Controller
     {
         CartRepository _cartRepository = new CartRepository();
 
         [HttpGet]
-        [Route("")]
-        public IActionResult GetCartItems(string keyword)
+        [Route("list/{userId}")]
+        public IActionResult GetCartItems(int userId)
         {
-            List<Cart> carts = _cartRepository.GetCartItems(keyword);
-            IEnumerable<CartModel> cartModels = carts.Select(c => new CartModel(c)); 
-            return Ok(cartModels);
+            Cart carts = _cartRepository.GetCartByUserId(userId);
+           // IEnumerable<CartModel> cartModels = carts.Select(c => new CartModel(c)); 
+            return Ok(carts);
         }
 
         [HttpPost]
@@ -35,9 +35,9 @@ namespace BookStore.Api.Controllers
             Cart cart = new Cart()
             {
                 Id = cartModel.Id,
-                Bookid = cartModel.BookId,
+                BookId = cartModel.BookId,
                 Quantity = 1,
-                Userid = cartModel.UserId,
+                UserId = cartModel.UserId,
             };
 
             return Ok(_cartRepository.AddCart(cart));
@@ -56,8 +56,8 @@ namespace BookStore.Api.Controllers
             Cart cart = new Cart()
             {
                 Id = cartModel.Id,
-                Userid = cartModel.UserId,
-                Bookid = cartModel.BookId,
+                UserId = cartModel.UserId,
+                BookId = cartModel.BookId,
                 Quantity = cartModel.Quantity,
             };
 

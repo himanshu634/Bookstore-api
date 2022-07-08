@@ -14,15 +14,15 @@ namespace BookStore.Api.Controllers
 
         CategoryRepository _categoryRepository = new CategoryRepository();
 
-        [Route("")]
+        [Route("list")]
         [HttpGet]
         public IActionResult GetCategories(int pageIndex = 1, int pageSize = 10, string keyword = "")
         {
-            var categories = _categoryRepository.GetCategories(pageIndex, pageSize, keyword);
+            var categories = _categoryRepository.GetCategories(pageIndex + 1, pageSize, keyword);
 
             ListResponse<CategoryModel> listResponse = new ListResponse<CategoryModel>()
             {
-                Results = categories.Results.Select(c => new CategoryModel(c)),
+                Records = categories.Records.Select(c => new CategoryModel(c)),
                 TotalRecords = categories.TotalRecords,
             };
 

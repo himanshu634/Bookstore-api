@@ -47,6 +47,9 @@ namespace BookStore.Api
 
             app.UseHttpsRedirection();
 
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -55,6 +58,8 @@ namespace BookStore.Api
             {
                 endpoints.MapControllers();
             });
+
+
         }
     }
 }

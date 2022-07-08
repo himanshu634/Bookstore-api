@@ -25,16 +25,21 @@ namespace BookStore.Repository
         {
             User user = new User()
             {
-                Firstname = model.Firstname,
+                FirstName = model.FirstName,
                 Email = model.Email,
-                Lastname = model.Lastname,
-                Roleid = model.Roleid,
+                LastName = model.LastName,
+                RoleId = model.RoleId,
                 Password = model.Password
             };
 
             var entry = _context.Users.Add(user);
             _context.SaveChanges();
             return entry.Entity;
+        }
+
+        public List<Role> GetAllRoles()
+        {
+            return _context.Roles.ToList();
         }
     }
 }

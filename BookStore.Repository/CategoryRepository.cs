@@ -10,18 +10,42 @@ namespace BookStore.Repository
 {
     public class CategoryRepository : BaseRepository
     {
-        public ListResponse<Category> GetCategories(int pageIndex, int pageSize, string keyword)
+       public ListResponse<Category> GetCategories(int pageIndex, int pageSize, string keyword)
         {
-            keyword = keyword?.ToLower()?.Trim();
-            var query = _context.Categories.Where(c => keyword == null || c.Name.Contains(keyword)).AsQueryable();
-            int totalRecords = query.Count();
-            List<Category> categories = query.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+            var query = _context.Categories.AsQueryable();
+
+            int TotalRecords = query.Count();
+            if (pageSize != 0)
+            {
+                if (pageIndex != 0)
+                {
+                    query = query.Where(category => (keyword == default || category.Name.ToLower().Contains(keyword.ToLower()))).Skip((pageIndex - 1) * pageSize).Take(pageSize);
+                    if (keyword != default)
+                    {
+                        TotalRecords = query.Count();
+                    }
+                }
+            }
+
+            var Records = query.ToList();
+
+
 
             return new ListResponse<Category>()
             {
-                Results = categories,
-                TotalRecords = totalRecords,
+                Records = Records,
+                TotalRecords = TotalRecords,
             };
+            /* keyword = keyword?.ToLower()?.Trim();
+             var query = _context.Categories.Where(c => keyword == null || c.Name.Contains(keyword)).AsQueryable();
+             int totalRecords = query.Count();
+             List<Category> categories = query.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+
+             return new ListResponse<Category>()
+             {
+                 Results = categories,
+                 TotalRecords = totalRecords,
+             };*/
         }
 
         public Category GetCategory(int Id)

@@ -20,7 +20,12 @@ namespace BookStore.Repository
         public Cart GetCart(int Id)
         {
             return _context.Carts.FirstOrDefault(c => c.Id == Id);
-         }
+        }
+
+        public Cart GetCartByUserId(int userId)
+        {
+            return _context.Carts.FirstOrDefault(c => c.UserId == userId);
+        }
 
         public Cart AddCart(Cart cart)
         {

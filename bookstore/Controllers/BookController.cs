@@ -21,7 +21,7 @@ namespace BookStore.Api.Controllers
 
             ListResponse<BookModel> listResponse = new ListResponse<BookModel>()
             {
-                Results = books.Results.Select(c => new BookModel(c)),
+                Records = books.Records.Select(c => new BookModel(c)),
                 TotalRecords = books.TotalRecords,
             };
 

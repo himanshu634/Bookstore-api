@@ -9,7 +9,7 @@ namespace BookStore.models.Models
 {
     public class ListResponse<T> where T: class
     {
-        public IEnumerable<T> Results { get; set; } 
+        public IEnumerable<T> Records { get; set; } 
 
        public int TotalRecords { get; set; }
     }
