@@ -13,16 +13,42 @@ namespace BookStore.Api.Controllers
     [Route("api/cart")]
     public class CartController : Controller
     {
-        CartRepository _cartRepository = new CartRepository();
+        readonly CartRepository _cartRepository = new CartRepository();
+        readonly BookRepository _bookRepository = new BookRepository();
+
+        private  class Cart2
+        {
+            public Cart2(int Id, int UserId, int Quantity, Book Book)
+            {
+                this.Id = Id;
+                this.UserId = UserId;
+                this.Quantity = Quantity;
+                this.Book = Book;
+            }
+            public int Id { get; set; }
+            public int UserId { get; set; }
+            public int Quantity { get; set; }
+            public Book Book { get; set; }
+        }
 
         [HttpGet]
-        [Route("list/{userId}")]
-        public IActionResult GetCartItems(int userId)
+        [Route("list")]
+        public IActionResult GetCartItems(string keyword)
         {
-            Cart carts = _cartRepository.GetCartByUserId(userId);
-           // IEnumerable<CartModel> cartModels = carts.Select(c => new CartModel(c)); 
-            return Ok(carts);
+            List<Cart> carts = _cartRepository.GetCartItems(keyword);
+            IEnumerable<CartModel> cartModels = carts.Select(c => new CartModel(c)); 
+            return Ok(cartModels);
         }
+
+        [HttpGet]
+        [Route("getbyid/{id}")]
+        public IActionResult GetCartById(int id)
+        {
+            List<Cart> _list = _cartRepository.GetCart(id);
+            IEnumerable<Cart2> _listModels = _list.Select(c => new Cart2(c.Id, c.UserId, c.Quantity, _bookRepository.GetBook(c.BookId)));
+            return Ok(_listModels);
+        }
+
 
         [HttpPost]
         [Route("add")]    

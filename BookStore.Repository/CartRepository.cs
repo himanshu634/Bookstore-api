@@ -17,14 +17,9 @@ namespace BookStore.Repository
             var query = _context.Carts.Include(c => c.Book).Where(c => keyword == null || c.Book.Name.ToLower().Contains(keyword)).AsQueryable();//Where(c => keyword == null || c.Id )
             return query.ToList();
         }
-        public Cart GetCart(int Id)
+        public List<Cart> GetCart(int userId)
         {
-            return _context.Carts.FirstOrDefault(c => c.Id == Id);
-        }
-
-        public Cart GetCartByUserId(int userId)
-        {
-            return _context.Carts.FirstOrDefault(c => c.UserId == userId);
+            return _context.Carts.Where(c => c.UserId == userId).ToList();
         }
 
         public Cart AddCart(Cart cart)
